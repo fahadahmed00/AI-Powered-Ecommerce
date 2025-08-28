@@ -9,4 +9,5 @@ ngrok.yml
 .env
 
 # Log files
+
 *.log
