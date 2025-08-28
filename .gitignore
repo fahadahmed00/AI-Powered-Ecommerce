@@ -1,0 +1,12 @@
+# Dependencies
+node_modules
+
+# Executables
+ngrok.exe
+*.json
+# Private Config Files
+ngrok.yml
+.env
+
+# Log files
+*.log
