@@ -4,7 +4,7 @@ const { WebhookClient, Payload } = require('dialogflow-fulfillment');
 const axios = require('axios');
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const GEMINI_API_KEY = 'AIzaSyAPfAJ_yzMPrKP1JG40WRM_aCeqBxZ7NIg';
+const GEMINI_API_KEY = 'GEMNI API';
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 
 exports.myEcommerceWebhook = (request, response) => {
@@ -308,3 +308,4 @@ exports.myEcommerceWebhook = (request, response) => {
 
     agent.handleRequest(intentMap);
 };
+
