@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahad Store - Professional Chatbot UI</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1600x800/333333/FFFFFF?text=Welcome+to+Our+Store') no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-indigo-600">Fahad Store</div>
+            <div>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 px-3 py-2">Home</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 px-3 py-2">Products</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 px-3 py-2">About</a>
+                <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section h-96 flex items-center justify-center text-white text-center pt-16">
+        <div>
+            <h1 class="text-5xl font-extrabold mb-4">Discover Your Style</h1>
+            <p class="text-xl mb-8">Your one-stop shop for the latest trends.</p>
+            <button class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-10">Featured Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/600x400/6366f1/FFFFFF?text=Electronics" class="w-full h-56 object-cover" alt="Electronics">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Latest Gadgets</h3>
+                        <p class="text-gray-600 mb-4">Explore our wide range of electronics.</p>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/600x400/ec4899/FFFFFF?text=Fashion" class="w-full h-56 object-cover" alt="Fashion">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Trendy Apparel</h3>
+                        <p class="text-gray-600 mb-4">Discover the latest in fashion.</p>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/600x400/f59e0b/FFFFFF?text=Shoes" class="w-full h-56 object-cover" alt="Shoes">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Comfortable Shoes</h3>
+                        <p class="text-gray-600 mb-4">Find your perfect pair today.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Fahad Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- =================================================================== -->
+    <!-- APNA DIALOGFLOW MESSENGER CODE YAHAN PASTE KAREIN -->
+    <!-- =================================================================== -->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1">
+</script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="MyEcommerceBot"
+  agent-id="36872f0f-7cf3-4909-8989-cab84a60c7ac"
+  language-code="en"
+></df-messenger>
+    <!-- =================================================================== -->
+
+</body>
+</html>
